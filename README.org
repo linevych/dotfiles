@@ -2,3 +2,6 @@
 
 Here I store my custom dotfiles, feel free to use it as example if needed.
 
+** Contents
+- [[.xinitrc][.xinitrc]] --- autostatring pograms and firing i3. Should be linked to =~/.xsession= to become
+  default session 
