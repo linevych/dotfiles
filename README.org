@@ -1,0 +1,4 @@
+* Dotfiles
+
+Here I store my custom dotfiles, feel free to use it as example if needed.
+
