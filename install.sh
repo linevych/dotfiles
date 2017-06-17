@@ -29,7 +29,7 @@ function check_installation () {
     which $1 &> /dev/null || echo -e "${B}Warning: ${1} is not installed!${N} "
 }
 
-# Taks. Should begin from do__
+# Taks. Should begins from do__
 
 function do__install_i3_config () {
     echo -e "Updating i3 configuration..."
@@ -56,6 +56,15 @@ function do__install_rofi_config () {
     check_installation rofi
 }
 
+function do__install_xinitrc_config () {
+    echo "Updating xinitrc config"
+    ln -sf "$(pwd)/xinitrc" "${HOME}/.xinitrc"
+    ln -sf "$(pwd)/xinitrc" "${HOME}/.xsession"
+
+    check_installation compton
+    check_installation gnome-settings-daemon
+    check_installation xfce4-volumed
+}
 
 cat ./ascii.txt
 echo
