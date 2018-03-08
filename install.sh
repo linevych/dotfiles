@@ -36,7 +36,7 @@ function do__install_i3_config () {
     mkdir -p $I3_CONFIG_DIR
     ln -sf "$(pwd)/i3.conf" $I3_CONFIG_PATH
     {
-        i3-msg reload &> /dev/null
+        i3-msg restart &> /dev/null
     } || {
         echo "Could not restart i3..."
         check_installation i3
