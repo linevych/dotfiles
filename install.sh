@@ -2,7 +2,7 @@
 # Dotfiles installator
 #
 # Author: Anton Linevych <anton@linevich.net>
-# URL: https://github.com/linevich/dotfiles
+# URL: https://github.com/linevych/dotfiles
 
 # Font styles shotrcuts
 B="\e[1m"
@@ -29,7 +29,8 @@ function check_installation () {
     which $1 &> /dev/null || echo -e "${B}Warning: ${1} is not installed!${N} "
 }
 
-# Taks. Should begins from do__
+# Tasks.
+# Each function should begin from `do__`
 
 function do__install_i3_config () {
     echo -e "Updating i3 configuration..."
@@ -82,4 +83,3 @@ then
     done
     echo -e "\nDone!"
 fi
-
