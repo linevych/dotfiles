@@ -5,3 +5,8 @@ Here I store my custom dotfiles, feel free to use it as example if needed.
 ** Contents
 - [[xinitrc][xinitrc]] --- autostatring pograms and firing i3. Should be linked to =~/.xsession= to become
   default session
+** Required Debian/Ubuntu packages
+
+#+BEGIN_SRC bash
+sudo apt-get install -y rofi gnome-screenshot i3 i3blocks compton xfce4-volumed nitrogen
+#+END_SRC
