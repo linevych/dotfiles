@@ -67,6 +67,13 @@ function do__install_xinitrc_config () {
     check_installation xfce4-volumed
 }
 
+function do__install_lightdm_config () {
+    echo -e "Updating Lightdm configuration"
+    sudo ln -sf "$(pwd)/lightdm.conf" /etc/lightdm/lightdm.conf
+    sudo ln -sf "$(pwd)/lightdm-gtk-greeter.conf" /etc/lightdm/lightdm-gtk-greeter.conf
+    sudo ln -sf "$(pwd)/wallpapers/kumamon-2560x1080.jpg" /usr/share/wallpapers
+}
+
 cat ./ascii.txt
 echo
 echo -e "During installation some config files can be ${B}overridden${N}, so make sure that you have a ${B}backup!${N}"
